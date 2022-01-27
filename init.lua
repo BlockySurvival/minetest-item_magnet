@@ -83,7 +83,7 @@ if tool_enabled then
 end
 
 if control_enabled then
-	controls.register_on_hold(function(player, key)
+	controls.register_on_press(function(player, key)
 		if key ~= "sneak" then return end
 
 		pick_up_items(player, control_radius)
